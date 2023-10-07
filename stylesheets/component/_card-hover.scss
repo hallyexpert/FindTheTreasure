@@ -1,0 +1,109 @@
+// index 滑過出現漸層
+.bg-gradient-dark {
+    border-radius: $border-radius-xl;
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+
+.hover-special .hover-show {
+    display: none;
+}
+
+.hover-special:hover {
+    & .hover-show {
+        display: block;
+    }
+
+    .img-bigger {
+
+        transform: scale(1.5, 1.5);
+
+    }
+
+}
+
+// index 滑過出現狗狗照片
+.img-hover:hover img:nth-of-type(1) {
+    transition: all 0.8s;
+    opacity: 0;
+}
+
+// index 滑過出現陰影
+.card-c-shadow {
+    box-shadow: 0 1rem 0.9rem rgba($black, .1);
+
+    &:hover {
+        box-shadow: 0.125rem 0.5rem .5rem rgba($black, .2);
+    }
+}
+
+// design 滑過照片放大
+// 想詢問有沒有其他的寫法讓效果在電腦版不出現，或是有其他可以做出相同效果不用這麼麻煩的方法，再請助教提點
+.special-img:hover {
+    transform: translate(20px, 20px);
+
+    img {
+        transform: scale(1.3);
+    }
+
+    & .hover-show {
+        display: block;
+
+        .card-img-overlay {
+            top: -15%;
+            bottom: -15%;
+            right: -15%;
+            left: -15%;
+            transition: all 0.5s;
+        }
+
+    }
+
+}
+
+@media (min-width: 992px) {
+    .special-img:hover {
+        transform: translate(0);
+
+        img {
+            transform: scale(1);
+        }
+
+        & .hover-show {
+            display: block;
+
+            .card-img-overlay {
+                top: -0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+
+            }
+
+        }
+
+    }
+
+}
+
+//adopt 滑過變大
+// .stretch-hover{
+//     .text-hover {
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     white-space: nowrap;
+//         &:hover{
+//             padding-bottom: 10px;
+//         }
+//     }
+// }
+
+
+// @media (min-width: 992px) {
+//     .text-hover {
+//         text-overflow: clip;
+//         white-space: wrap;
+//     }
+
+// }

@@ -1,0 +1,39 @@
+.hover-active{
+    &:hover{
+        .hover-text{
+            color:$primary ;
+        }
+    }
+}
+
+
+
+@media (min-width: 992px) {
+.hover-active{
+    position: relative;
+    &::before{
+        content:"";
+        font-family: 'Kalam', cursive;
+        width: 11px;
+        height: 2px;
+        background-color: $primary;
+        position: absolute;
+        left: -2%;
+        bottom: 55%;
+        z-index: 9;
+        display: none;
+    }
+    &:hover{
+        .hover-text{
+            color:$primary ;
+            transform: translateX(20px);
+            transition: transform 0.3s;
+        }
+        &::before{
+            display: block;
+            transform: translateX(20px);
+
+        }
+    }
+}
+}
