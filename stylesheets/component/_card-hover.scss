@@ -39,7 +39,6 @@
 }
 
 // design 滑過照片放大
-// 想詢問有沒有其他的寫法讓效果在電腦版不出現，或是有其他可以做出相同效果不用這麼麻煩的方法，再請助教提點
 .special-img:hover {
     transform: translate(20px, 20px);
 
@@ -62,7 +61,7 @@
 
 }
 
-@media (min-width: 992px) {
+@include media-breakpoint-up(lg) {
     .special-img:hover {
         transform: translate(0);
 
@@ -87,23 +86,3 @@
 
 }
 
-//adopt 滑過變大
-// .stretch-hover{
-//     .text-hover {
-//     overflow: hidden;
-//     text-overflow: ellipsis;
-//     white-space: nowrap;
-//         &:hover{
-//             padding-bottom: 10px;
-//         }
-//     }
-// }
-
-
-// @media (min-width: 992px) {
-//     .text-hover {
-//         text-overflow: clip;
-//         white-space: wrap;
-//     }
-
-// }

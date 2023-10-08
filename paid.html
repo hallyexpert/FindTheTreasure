@@ -59,8 +59,8 @@
 
     <main>
         <picture>
-            <source srcset="../images/banner.png" media="(min-width: 992px)">
-            <img src="../images/banner_service-sm.png" class="img-fluid mt-3 w-100" alt="貓咪的 banner">
+            <source srcset="./images/banner.png" media="(min-width: 992px)">
+            <img src="./images/banner_service-sm.png" class="img-fluid mt-3 w-100" alt="貓咪的 banner">
         </picture>
 
 
@@ -112,8 +112,8 @@
                                 <input type="text" class="form-control" id="Address" placeholder="請輸入詳細地址">
                             </div>
                             <div class="col-12">
-                                <label class="form-label">選擇設計師風格</label>
-                                <select class="form-select" aria-label="Default select example">
+                                <label class="form-label" for="select designer">選擇設計師風格</label>
+                                <select class="form-select" aria-label="Default select example" id="select designer">
                                     <option selected>Meili</option>
                                     <option value="Meili">Meili</option>
                                     <option value="Meili">Meili</option>
@@ -122,7 +122,7 @@
                             </div>
                             <div class="col-12">
                                 <label for="paid" class="form-label">付款方式</label>
-                                <select class="form-select" aria-label="Default select example">
+                                <select class="form-select" aria-label="Default select example" id="paid">
                                     <option selected>貨到付款</option>
                                     <option value="信用卡">信用卡</option>
                                     <option value="Line Pay">Line Pay</option>
@@ -174,7 +174,7 @@
     <footer class=" border-top border-secondary border-3 ">
         <div class="container py-5">
             <div class="row row-cols-1 row-cols-lg-2 justify-content-around gy-5 gx-0">
-                <div class="col-lg-5 ">
+                <div class="col-lg-6 ">
                     <div class="row row-cols-1 row-cols-lg-2  align-items-center flex-column flex-lg-row gy-4 ">
                         <div class="col-3">
                             <img src="./images/link01.png" class="img-fluid" alt="握手的圖片">
@@ -191,7 +191,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-5 ">
+                <div class="col-lg-6 ">
                     <div class="row row-cols-1 row-cols-lg-2 align-items-center flex-column  flex-lg-row gy-4 ">
                         <div class="col-4">
                             <img src="./images/link02.png" class="img-fluid" alt="握手的圖片">
